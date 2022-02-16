@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stilsetting.css">
+    
+  <title>Creating Value From Waste</title> 
+
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style = "margin-left:15%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style = "0";
+    }
+  </script>
+
+</body>
+</hmtl>
