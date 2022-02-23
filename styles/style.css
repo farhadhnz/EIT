@@ -64,6 +64,10 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+p {
+  margin: 15px !important;
+  width: 50vw;
+}
 
 ul {
   display: block;
@@ -122,11 +126,7 @@ a {
 
 #sidebar ul li a:hover {
   background-color: #2f89fc;
-}
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
+  cursor: pointer;
 }
 
 .mr-3,
@@ -147,7 +147,7 @@ a {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important;
+  /* display: flex !important; */
 }
 
 .mb-5,
@@ -156,7 +156,7 @@ a {
 }
 
 #content {
-  width: 100%;
+  /* width: 100%; */
   padding: 0;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
@@ -166,7 +166,8 @@ a {
 
 @media (min-width: 768px) {
   .p-md-5 {
-    padding: 3rem !important;
+    padding-top: 5em !important;
+    /* border-left: 5px !important; */
   }
 }
 
@@ -213,6 +214,9 @@ a {
 }
 
 .fa-home:before {
-  content: "\f015";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.fa-user:before {
   font: normal normal normal 14px/1 FontAwesome;
 }
