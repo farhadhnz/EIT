@@ -39,6 +39,15 @@ html {
   display: block;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  background: #fff;
+  color: gray;
+}
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -111,9 +120,18 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+#sidebar ul li a:hover {
+  background-color: #2f89fc;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
 }
 
 .wrapper {
@@ -144,4 +162,57 @@ a {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .p-md-5 {
+    padding: 3rem !important;
+  }
+}
+
+/* button */
+
+#sidebar .custom-menu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: -35px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#sidebar .custom-menu .btn.btn-primary {
+  background: #2f89fc;
+  border-color: transparent;
+  position: relative;
+  color: #000;
+  width: 30px;
+  height: 30px;
+}
+
+#sidebar .custom-menu .btn.btn-primary:after,
+#sidebar .custom-menu .btn.btn-primary:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: fontawesome;
+  color: #fff;
+}
+
+#sidebar .custom-menu .btn.btn-primary:after {
+  content: "\f054";
+  left: 2px;
+}
+
+.fa {
+  font: normal normal normal 14px/1 Arial !important;
+}
+
+.fa-home:before {
+  content: "\f015";
+  font: normal normal normal 14px/1 FontAwesome;
 }
