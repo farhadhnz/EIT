@@ -18,19 +18,22 @@
 
     
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
+    <div class="custom-menu">
+        <button type="button" class="btn btn-primary" onclick="opencloseNav()">&#60;</button>
+    </div>
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
-            <div class="custom-menu">
+            <!-- <div class="custom-menu">
                 <button type="button" id="sidebarCollapse" class="btn btn-primary" onclick="closeNav()">
                     
                 </button>
-            </div>
+            </div> -->
    
             <ul class="list-unstyled components mb-5">
                 <li class="active">
@@ -235,5 +238,6 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
+    <script src="panel_functionality.js"></script>
 </body>
 </html>
