@@ -1,29 +1,232 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
-    <link rel="stylesheet" href="stilsetting.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
   <title>Creating Value From Waste</title> 
 
-  <div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  
-  <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidepanel").style = "margin-left:15%";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidepanel").style = "0";
-    }
-  </script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  
+  <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sidebar" id="myBtn">&#60;</button> -->
+  <!-- <button class="openbtn" onclick="openNav()">&#60; </button> -->
+  <!-- <button class="openbtn" onclick="openNav()" id="myBtn">&#60;</button> -->
+
+  <div class="custom-menu">
+    <button type="button" class="btn btn-primary" onclick="opencloseNav()">&#60;</button>
+  </div>
+  <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <ul class="list-unstyled components mb-5" id="banan">
+                <li class="active">
+                    <a id="defaultOpen" onclick="openContent(event, 'Home')">
+                        <span class="fa fa-home mr-3">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'Wool')">
+                        <span class="fa fa-user mr-3">
+                            Wool
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'Leather')">
+                        <span class="fa fa-user mr-3">
+                            Leather
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'Silk')">
+                        <span class="fa fa-user mr-3">
+                            Silk
+                        </span>
+                    </a>
+                </li>
+                
+                <li class="active">
+                    <a onclick="openContent(event, 'Cotton')">
+                        <span class="fa fa-user mr-3">
+                            Cotton
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'rayon')">
+                        <span class="fa fa-user mr-3">
+                            Rayon/Viscose
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'hemp')">
+                        <span class="fa fa-user mr-3">
+                            Hemp
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'linen')">
+                        <span class="fa fa-user mr-3">
+                            Linen
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'polyester')">
+                        <span class="fa fa-user mr-3">
+                            Polyester
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'nylon')">
+                        <span class="fa fa-user mr-3">
+                            Nylon
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'spandex')">
+                        <span class="fa fa-user mr-3">
+                            Spandex/lycra/elastane
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'cellulose')">
+                        <span class="fa fa-user mr-3">
+                            Rayon (regenerated cellulose/viscose)
+                        </span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a onclick="openContent(event, 'acrylic')">
+                        <span class="fa fa-user mr-3">
+                            Acrylic
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="Home" class="tabcontent">
+                <h2 class="mb-4">Home</h2>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="Wool" class="tabcontent">
+                <h2 class="mb-4">Wool</h2>
+                <p>
+                    Wool is a natural protein fiber made usually from sheep or goat hair. Nowadays in many countries, wool is considered a biproduct from the production of meat.  
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="Leather" class="tabcontent">
+                <h2 class="mb-4">Leather</h2>
+                <p>
+                    Leather is made from dressed or tanned animal skin, most often cows. Through the production process, it becomes very durable and water resistant. 
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="Silk" class="tabcontent">
+                <h2 class="mb-4">Silk</h2>
+                <p>
+                    Silk is made from fibers created by the silkworm insects. Silk is known to be very delicate and soft, yet extremely durable and can absorb a large quantity of water without feeling wet.
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="Cotton" class="tabcontent">
+                <h2 class="mb-4">Cotton</h2>
+                <p>
+                    Cotton is made from the natural fibers of cotton plants and is primarily composed of cellulose. It is one of the most widely used materials in the world and is known for its softness.  
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="rayon" class="tabcontent">
+                <h2 class="mb-4">Rayon/Viscose</h2>
+                <p>
+                    Rayon/viscose is a fabric made out of heavily processed wood pulp. There exist many kinds of rayon and it is often used to imitate other fabric types, such as silk, wool and cotton. 
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="hemp" class="tabcontent">
+                <h2 class="mb-4">Hemp</h2>
+                <p>
+                    Hemp fibers are made from the stems of the Cannabis Sativa plant and have a long historical presence. Hemp fabric is known for its durability and absorbency, and can be used both in its pure form and mixed with other fibers. 
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="linen" class="tabcontent">
+                <h2 class="mb-4">Linen</h2>
+                <p>
+                    Linen is made from flax plant fibers. Linen is used especially in hot and humid climates, as it does not retain moisture for long periods of time. It is one of the world’s oldest fabrics.  
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="polyester" class="tabcontent">
+                <h2 class="mb-4">Polyester</h2>
+                <p>
+                    Polyester is a type of plastic. It is found naturally in, for example, cuticles on plants, but can also be made synthetically, either based on petroleum products or more directly from biological material.  
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="nylon" class="tabcontent">
+                <h2 class="mb-4">Nylon</h2>
+                <p>
+                    Nylon is a trademark of polyamide and is textile fibers made from petrochemicals for example oil. Nylon is a cheap, light, smooth and strong material that can withstand moisture. 
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="spandex" class="tabcontent">
+                <h2 class="mb-4">Spandex/lycra/elastane</h2>
+                <p>
+                    Spandex is made of a synthetic polymer called polyurethane. The fabric is known for its elasticity, and it often used in jeans, underwear and sportswear. 
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="cellulose" class="tabcontent">
+                <h2 class="mb-4">Rayon (regenerated cellulose/viscose)</h2>
+                <p>
+                    Rayon is synthetic fibers made from cellulose, as well as viscose. The cellulose used is extracted from wood. In rayon textile fibers there are highly toxic carbon disulfide used.  
+                </p>
+            </div>
+        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div id="acrylic" class="tabcontent">
+                <h2 class="mb-4">Acrylic</h2>
+                <p>
+                    Acrylic is a transparent plastic material, which is easy to fabricate.  Acrylic is the weakest one of the synthetic fibers. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+  <script src="scripts/endingScript.js"></script>
+  <script src="panel_functionality.js"></script>
 
 </body>
 </hmtl>
