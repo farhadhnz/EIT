@@ -12,3 +12,10 @@ function openContent(evt, contentName) {
     document.getElementById(contentName).style.display = "block";
     // evt.currentTarget.className += " active";
   }
+
+
+  // function closeNav(){
+  //   var navBar = document.getElementById("sidebar");
+
+  //   navBar.style.display = 'none';
+  // }
