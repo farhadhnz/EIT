@@ -97,8 +97,8 @@ a {
 }
 
 #sidebar {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 250px;
+  max-width: 250px;
   background: var(--primary);
   color: #fff;
   -webkit-transition: all 0.3s;
