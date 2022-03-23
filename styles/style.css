@@ -128,7 +128,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-#sidebar ul li a span{
+#sidebar ul li a span {
   margin-left: 1rem;
 }
 
@@ -146,16 +146,8 @@ a {
   width: 100%;
 }
 
-.align-items-stretch {
-  -webkit-box-align: stretch !important;
-  -ms-flex-align: stretch !important;
-  align-items: stretch !important;
-}
-
 .d-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  /* display: flex !important; */
+  display: flex !important;
 }
 
 .mb-5,
@@ -164,9 +156,8 @@ a {
 }
 
 @media (min-width: 768px) {
-  .p-md-5 {
+  .middle-content {
     padding-top: 5rem !important;
-    /* border-left: 5px !important; */
   }
 }
 
@@ -183,51 +174,14 @@ a {
   transition: 0.3s;
 }
 
-#sidebar .custom-menu .btn.btn-primary {
-  background: var(--secondary);
-  border-color: transparent;
-  position: relative;
-  color: #000;
-  width: 30px;
-  height: 30px;
-}
-
 .custom-menu .btn.btn-primary {
-  background: var(--secondary);
+  background: var(--dark);
   border-color: transparent;
   position: relative;
   color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
-}
-
-#sidebar .custom-menu .btn.btn-primary:after,
-#sidebar .custom-menu .btn.btn-primary:before {
-  position: absolute;
-  background: var(--secondary);
-  top: 2px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  font-family: fontawesome;
-  color: #fff;
-}
-
-#sidebar .custom-menu .btn.btn-primary:after {
-  content: "\f054";
-  left: 2px;
-}
-
-.fa {
-  font: normal normal normal 14px/1 Arial !important;
-}
-
-.fa-home:before {
-  font: normal normal normal 14px/1 FontAwesome;
-}
-
-.fa-user:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  padding: 0;
 }
 
 .tabcontent {
@@ -235,8 +189,49 @@ a {
 }
 
 .tabcontent img {
-
   margin: 5rem !important;
   width: 50rem;
   border-radius: 10px;
+}
+
+.tabcontent h2 {
+  display: inline-block;
+}
+
+.tabcontent i {
+  display: block;
+  margin: 2rem 5rem;
+  font-size: 36px;
+}
+.fa-droplet {
+  color: var(--blue) !important;
+}
+
+.fa-cloud {
+  color: var(--green) !important;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 56px;
+  font-weight: bold;
+  padding: 1rem 3.2rem;
+  display: inline-block;
+  position: absolute;
+  left: 90rem;
+}
+
+.circle-low {
+  background-color: var(--danger);
+}
+
+.circle-high {
+  background-color: var(--primary);
+}
+
+.circle-mid {
+  background-color: var(--warning);
 }

@@ -3,10 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Textile Index</title>
     <link rel="stylesheet" href="styles/style.css"></head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
     <script src="https://kit.fontawesome.com/6fea878215.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
@@ -26,7 +28,7 @@
 </head>
 <body>
     
-    <div class="wrapper d-flex align-items-stretch">
+    <div class="wrapper d-flex">
        
         <nav id="sidebar">
             <!-- <div class="custom-menu">
@@ -144,115 +146,134 @@
             </ul>
         </nav>
         <div class="custom-menu">
-            <button type="button" class="btn btn-primary" onclick="opencloseNav()">&#60;</button>
+            <button type="button" class="btn btn-primary" onclick="opencloseNav()">
+                <i id="crocodile" class="fa-solid fa-greater-than"></i>
+            </button>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="Home" class="tabcontent">
                 <h2 class="mb-4">Home</h2>
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="Wool" class="tabcontent">
                 <h2 class="mb-4">Wool</h2>
+                <div class="circle circle-high" >9</div>
                 <p>
                     Wool is a natural protein fiber made usually from sheep or goat hair. Nowadays in many countries, wool is considered a biproduct from the production of meat.  
                 </p>
+
                 <img src="images/Fabric_images/wool_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="Leather" class="tabcontent">
                 <h2 class="mb-4">Leather</h2>
+                <div class="circle circle-high" >9</div>
                 <p>
                     Leather is made from dressed or tanned animal skin, most often cows. Through the production process, it becomes very durable and water resistant. 
                 </p>
                 <img src="images/Fabric_images/leather_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="Silk" class="tabcontent">
                 <h2 class="mb-4">Silk</h2>
+                <div class="circle circle-high" >8</div>
                 <p>
                     Silk is made from fibers created by the silkworm insects. Silk is known to be very delicate and soft, yet extremely durable and can absorb a large quantity of water without feeling wet.
                 </p>
                 <img src="images/Fabric_images/silk_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="Cotton" class="tabcontent">
                 <h2 class="mb-4">Cotton</h2>
+                <div class="circle circle-high" >7</div>
                 <p>
                     Cotton is made from the natural fibers of cotton plants and is primarily composed of cellulose. It is one of the most widely used materials in the world and is known for its softness.  
                 </p>
+                
+                <i class="fa-solid fa-droplet"></i>
+                <i class="fa-regular fa-trash-can"></i>
+                <i class="fa-solid fa-cloud"></i>
                 <img src="images/Fabric_images/cotton_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div id="content" class="p-4 p-md-5 pt-5">
+        <div id="content" class="middle-content">
             <div id="rayon" class="tabcontent">
                 <h2 class="mb-4">Rayon/Viscose</h2>
+                <div class="circle circle-mid" >6</div>
                 <p>
                     Rayon/viscose is a fabric made out of heavily processed wood pulp. There exist many kinds of rayon and it is often used to imitate other fabric types, such as silk, wool and cotton. 
                 </p>
                 <img src="images/Fabric_images/rayon_silverbobbin.jpg" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="hemp" class="tabcontent">
                 <h2 class="mb-4">Hemp</h2>
+                <div class="circle circle-mid" >5</div>
                 <p>
                     Hemp fibers are made from the stems of the Cannabis Sativa plant and have a long historical presence. Hemp fabric is known for its durability and absorbency, and can be used both in its pure form and mixed with other fibers. 
                 </p>
                 <img src="images/Fabric_images/hemp_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="linen" class="tabcontent">
                 <h2 class="mb-4">Linen</h2>
+                <div class="circle circle-mid" >4</div>
                 <p>
                     Linen is made from flax plant fibers. Linen is used especially in hot and humid climates, as it does not retain moisture for long periods of time. It is one of the world’s oldest fabrics.  
                 </p>
                 <img src="images/Fabric_images/linen_Etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="polyester" class="tabcontent">
                 <h2 class="mb-4">Polyester</h2>
+                <div class="circle circle-low" >3</div>
                 <p>
                     Polyester is a type of plastic. It is found naturally in, for example, cuticles on plants, but can also be made synthetically, either based on petroleum products or more directly from biological material.  
                 </p>
                 <img src="images/Fabric_images/polyster_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="nylon" class="tabcontent">
                 <h2 class="mb-4">Nylon</h2>
+                <div class="circle circle-low" >2</div>
                 <p>
                     Nylon is a trademark of polyamide and is textile fibers made from petrochemicals for example oil. Nylon is a cheap, light, smooth and strong material that can withstand moisture. 
                 </p>
                 <img src="images/Fabric_images/nylon_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="spandex" class="tabcontent">
                 <h2 class="mb-4">Spandex/lycra/elastane</h2>
+                <div class="circle circle-low" >1</div>
                 <p>
                     Spandex is made of a synthetic polymer called polyurethane. The fabric is known for its elasticity, and it often used in jeans, underwear and sportswear. 
                 </p>
                 <img src="images/Fabric_images/spandex_etsy.webp" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="cellulose" class="tabcontent">
                 <h2 class="mb-4">Rayon (regenerated cellulose/viscose)</h2>
+                <div class="circle circle-low" >1</div>
                 <p>
                     Rayon is synthetic fibers made from cellulose, as well as viscose. The cellulose used is extracted from wood. In rayon textile fibers there are highly toxic carbon disulfide used.  
                 </p>
                 <img src="images/Fabric_images/rayon_silverbobbin.jpg" alt="rayon">
             </div>
         </div>
-        <div class="p-4 p-md-5 pt-5">
+        <div class="middle-content">
             <div id="acrylic" class="tabcontent">
                 <h2 class="mb-4">Acrylic</h2>
+                <div class="circle circle-low" >1</div>
                 <p>
                     Acrylic is a transparent plastic material, which is easy to fabricate.  Acrylic is the weakest one of the synthetic fibers. 
                 </p>
