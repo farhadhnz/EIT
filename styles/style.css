@@ -243,3 +243,22 @@ a {
   margin-left: 10px;
   font-family: 'Roboto', sans-serif;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 48%;
+  height: 300px;
+  margin-bottom: 2%;
+}
+
+.flex-item p{
+
+}
+
+
+
