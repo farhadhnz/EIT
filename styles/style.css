@@ -50,7 +50,7 @@ body {
 
 h2 {
   display: block;
-  font-size: 1.5rem;
+  font-size: 4rem !important;
   margin-block-start: 0.83rem;
   margin-block-end: 0.83rem;
   margin-inline-start: 0;
@@ -70,6 +70,7 @@ dl {
 p {
   margin: 5rem !important;
   width: 50rem;
+  font-size: 2rem;
 }
 
 ul {
@@ -238,7 +239,7 @@ a {
 
 
 .water-span {
-  font-size: 30px;
+  font-size: 2.5rem;
   margin-left: 10px;
   font-family: 'Roboto', sans-serif;
 }
