@@ -26,14 +26,15 @@
 function opencloseNav() {
   var x = document.getElementById("sidebar");
   var i_element = document.getElementById("crocodile");
+  
   if (x.style.display === "none") {
-  x.style.display = "block";
-  i_element.classList.add("fa-greater-than");
-  i_element.classList.remove("fa-less-than");
+    x.style.display = "block";
+    i_element.classList.add("fa-greater-than");
+    i_element.classList.remove("fa-less-than");
   } else {
-  x.style.display = "none";
-  i_element.classList.remove("fa-greater-than");
-  i_element.classList.add("fa-less-than");
+    x.style.display = "none";
+    i_element.classList.remove("fa-greater-than");
+    i_element.classList.add("fa-less-than");
   }
 }
 
