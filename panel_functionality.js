@@ -29,12 +29,12 @@ function opencloseNav() {
   
   if (x.style.display === "none") {
     x.style.display = "block";
-    i_element.classList.add("fa-greater-than");
-    i_element.classList.remove("fa-less-than");
+    i_element.classList.add("fa-less-than");
+    i_element.classList.remove("fa-greater-than");
   } else {
     x.style.display = "none";
-    i_element.classList.remove("fa-greater-than");
-    i_element.classList.add("fa-less-than");
+    i_element.classList.remove("fa-less-than");
+    i_element.classList.add("fa-greater-than");
   }
 }
 
